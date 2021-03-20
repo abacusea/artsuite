@@ -1,0 +1,78 @@
+@import "../../styles/base/variables.scss";
+@import "../../styles/util/mixins.scss";
+.hero_banner{
+	// position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// z-index: 1;
+	// width: 100%;
+	margin-top: 160px;
+	.hero_content{
+		padding: 20vh 0 0 7.5vw;
+		@include desktop-lg() {
+			padding: 15vh 0 0 7.5vw;
+		}
+		h3{
+			display: flex;
+			flex-direction: column;
+			font-family: $secondary-font-family;
+			font-weight: 900;
+			font-size: 52px;
+			line-height: 61px;
+			margin-right: 10px;
+			@include desktop-lg() {
+			  font-size: 40px;
+			  line-height: 50px;
+			}
+		}
+		.btn_wrap{
+			font-family: $base-font-family;
+			font-size: 24px;
+			font-weight: 600;
+			margin-top: 6vh;
+			background-color: $color-blue;
+			padding: 20px 65px 20px 64px;
+			border: none;
+			border-radius: 11px;
+			box-shadow: -5px -5px 15px 0 #375de3, 5px 5px 15px 0 rgba(0, 0, 0, 0.24);
+			&:not(:disabled) {
+				&:not(.disabled) {
+					&:active {
+						color: $color-white;
+						background-color: $color-blue;
+						border-color: $color-blue;
+						box-shadow: -5px -5px 15px 0 #375de3, 5px 5px 15px 0 rgba(0, 0, 0, 0.24);
+					}
+				}
+			}
+			&:active {
+				transform: scale(.8);
+			}
+		}
+		.social_media{
+			display: flex;
+			position: absolute;
+			bottom: 40px;
+			.icons{
+				margin-left: 25px;
+				background-color: $color-blue;
+				padding: 17px;
+				border-radius: 11px;
+				box-shadow: -8px -5px 15px 0 rgba(31, 74, 231, 0.61), 5px 5px 15px 0 rgba(0, 0, 0, 0.12);
+				&:nth-child(1) {
+					margin-left: 0;
+				} 
+			}
+		}
+	}
+	.hero_image{
+		border-radius: 40px 0px 0px 40px;
+		background-image: url("../../img/hero_banner.jpg");
+		height: 100vh;
+		width: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

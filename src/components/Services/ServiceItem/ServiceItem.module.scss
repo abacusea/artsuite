@@ -1,0 +1,11 @@
+@import "../../../styles/base/variables.scss";
+@import "../../../styles/util/mixins.scss";
+.service_block{
+    display: flex;
+    flex-direction: column;
+    .service_wrap{
+        background: $color-glass;
+        box-shadow: inset 10px 10px 20px rgba(180, 198, 214, 0.46), inset -10px -10px 20px rgba(255, 255, 255, 0.51);
+        border-radius: 32px;
+    }
+}

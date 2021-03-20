@@ -1,0 +1,13 @@
+@import "./base/base";
+@import "./base/typography";
+@import "./base/variables";
+
+::-webkit-scrollbar {
+    width: $scrollBarHeight;
+    height: $scrollBarHeight;
+  }
+  
+::-webkit-scrollbar-button {
+width: $scrollBarHeight;
+height: $scrollBarHeight;
+}

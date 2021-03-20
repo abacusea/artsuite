@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" fill="none" viewBox="0 0 1920 1080">
+    <mask id="zvgwx1mo9a" width="1920" height="1080" x="0" y="0" maskUnits="userSpaceOnUse">
+        <path fill="#fff" d="M0 0H1920V1080H0z"/>
+    </mask>
+    <g stroke="#fff" stroke-opacity=".04" stroke-width="260" mask="url(#zvgwx1mo9a)">
+        <circle cx="103" cy="-149" r="509"/>
+        <circle cx="103" cy="-149" r="509"/>
+        <circle cx="164" cy="1229" r="509"/>
+    </g>
+    <circle cx="1842" cy="-129" r="509" stroke="#fff" stroke-opacity=".04" stroke-width="260"/>
+</svg>

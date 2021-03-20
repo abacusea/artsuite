@@ -1,0 +1,37 @@
+@import "../../styles/base/variables.scss";
+@import "../../styles/util/mixins.scss";
+.services{
+    margin-top: 110px;
+    .caption{
+        display: flex;
+        flex-direction: column;
+        .right_Grey{
+            padding: 0 8.5vw 0 0;
+            font-family: $base-font-family;
+            font-size: 40px;
+            font-weight:600;
+            color: rgba(0, 0, 0, 0.58);
+            text-align: right;
+        }
+        .right_Glass{
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 8.5vw 0 0;
+            margin-top: -25px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: $color-glass;
+                height: 13px;
+                width: calc(93% - 520px);
+                z-index: 1;
+                bottom: 25px;
+                left: 0;
+                border-radius: 10px;
+                box-shadow: inset 4px 4px 10px rgb(0 0 0 / 11%), inset 0px 4px 10px  $color-glass;
+            }
+        }
+    }
+}

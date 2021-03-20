@@ -1,0 +1,60 @@
+@import "../../styles/base/variables.scss";
+
+
+.hero_banner{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	.bg_img{
+		img{
+			width: 100%;
+			height: 100vh;
+		}
+	}
+	.slider{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: calc(60vw + #{$scrollBarHeight});
+		min-height: 100vh;
+		margin: 0;
+		padding-top: $scrollBarHeight;
+		overflow-y: auto;
+		overflow-x: hidden;
+		transform: rotate(-90deg) translateY(-45vw);
+		transform-origin: right top;
+		padding: 45vw 0 0 0;
+		& > div {
+			display: block;
+			padding: 5px;
+			transform: rotate(90deg);
+			transform-origin: right top;
+			// width: $finalHeight;
+			// height: $finalHeight;
+			margin: 10px 0;
+		}
+		.img_wrap{
+			margin: 0 10vh;
+			img{
+				height: 400px;
+			}
+		}
+	}
+}
+// .menu_item {
+// 	padding: 0 40px;
+// 	margin: 5px 10px;
+// 	user-select: none;
+// 	cursor: pointer;
+// 	border: 1px transparent solid;
+//   }
+//   .menu-item-wrapper {
+// 	border: 1px transparent solid;
+//   }
+//   .menu-item-wrapper.active {
+// 	border: 1px blue solid;
+//   }
+//   .menu_item.active {
+// 	border: 1px green solid;
+//   }
